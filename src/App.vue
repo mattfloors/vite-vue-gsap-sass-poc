@@ -7,14 +7,17 @@
     <Circle :color="colors.green" />
     <Circle :color="colors.purple" />
     <Circle :color="colors.pink" />
+    <CarouselVue></CarouselVue>
   </div>
 </template>
 
 <script setup>
 import { ref, onMounted } from "vue";
 import gsap from 'gsap';
+// @ts-ignore
 import logoImg from './assets/logo.png';
 import Circle from "./components/Circle.vue";
+import CarouselVue from "./components/Carousel.vue";
 
 const logo = ref(null);
 let tl = null;
